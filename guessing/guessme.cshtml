@@ -1,18 +1,19 @@
 <html>
  <body> 
 @{
- if (IsPost&&guestguess.equals(magic)) { 
-	string guestguess = Request["YourGuess"]; 
-	 
+ if (IsPost) { 
+	string guestguess = Request["magic"]; 
+	
+	if(guestguess.Equals("jurassic")){
 <p>You entered: <br />
  Correct! @guestguess <br />
  </p>
- }
+ }}
  else
  {
 <form method="post" action="">
  Company Name:<br />
- <input type="text" name="magic" value="jurassic" /><br />
+ <input type="text" name="magic" value="" /><br />
  Whats the magic word?:<br />
  
  <input type="submit" value="Submit" class="submit" />
