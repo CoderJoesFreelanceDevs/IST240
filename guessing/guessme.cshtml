@@ -1,7 +1,7 @@
 <html>
  <body> 
 @{
- if (IsPost) { 
+ if (IsPost&&guestguess.equals(magic)) { 
 	string guestguess = Request["YourGuess"]; 
 	 
 <p>You entered: <br />
@@ -12,7 +12,7 @@
  {
 <form method="post" action="">
  Company Name:<br />
- <input type="text" name="YourGuess" value="jurassic" /><br />
+ <input type="text" name="magic" value="jurassic" /><br />
  Whats the magic word?:<br />
  
  <input type="submit" value="Submit" class="submit" />
