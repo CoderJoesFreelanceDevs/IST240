@@ -1,25 +1,22 @@
 <html>
  <body> 
 @{
+Random cornum = Math.random(0,10);
+int newnum = cornum.Next(0,10);
  if (IsPost) { 
-	string guestguess = Request["magic"]; 
-	if(guestguess.Equals("jurassic")){
+	int32 guestguess = Request["magic"]; 
+	if(guestguess == newnum){
 <p>You entered: <br />
  Correct! @guestguess <br />
  </p>
- }else
- {
-<form method="post" action="">
- Company Name:<br />
- <input type="text" name="magic" value="" /><br />
- Whats the magic word?:<br />
- 
- <input type="submit" value="Submit" class="submit" />
- </form>
-}
  }
- else
+ }
+ else if ()
  {
+	Your number is too high
+}else
+	Your number is too low
+} 
 <form method="post" action="">
  Company Name:<br />
  <input type="text" name="magic" value="" /><br />
@@ -27,7 +24,5 @@
  
  <input type="submit" value="Submit" class="submit" />
  </form>
-}
-} 
  </body> 
  </html>
