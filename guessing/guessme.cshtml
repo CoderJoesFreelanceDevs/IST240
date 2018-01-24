@@ -4,8 +4,8 @@
 Random cornum =  new Random();
 int newnum = cornum.Next(0,10);
  if (IsPost) { 
-	string magic = Request["magic"];
-	int guestguess = Int32.Parse(magic);
+	string guess = Request["magic"];
+	int guestguess = System.Int32.Parse(guess);
 	if(guestguess == newnum){
 <p>You entered: <br />
  Correct! @guestguess <br />
