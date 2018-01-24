@@ -1,7 +1,7 @@
 <html>
  <body> 
 @{
-Random cornum = Math.random(0,10);
+Random cornum = Math.random();
 int32 newnum = cornum.Next(0,10);
  if (IsPost) { 
 	string guess = Request["magic"];
