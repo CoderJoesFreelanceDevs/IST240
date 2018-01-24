@@ -2,7 +2,7 @@
  <body> 
 @{
 Random cornum = Math.random(0,10);
-int newnum = cornum.Next(0,10);
+int32 newnum = cornum.Next(0,10);
  if (IsPost) { 
 	int32 guestguess = Request["magic"]; 
 	if(guestguess == newnum){
@@ -11,11 +11,11 @@ int newnum = cornum.Next(0,10);
  </p>
  }
  }
- else if ()
+ else if (guestguess > newnum)
  {
-	Your number is too high
+	<p>Your number is too high</p>
 }else
-	Your number is too low
+	<p>Your number is too low</p>
 } 
 <form method="post" action="">
  Company Name:<br />
