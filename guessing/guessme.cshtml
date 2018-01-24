@@ -3,11 +3,12 @@
 @{
  if (IsPost) { 
 	string guestguess = Request["magic"]; 
+	
 	if(guestguess.Equals("jurassic")){
-		<p>You entered: <br />
-		 Correct! @guestguess <br />
-		</p>
-	}
+<p>You entered: <br />
+ Correct! @guestguess <br />
+ </p>
+ }}
  else
  {
 <form method="post" action="">
@@ -18,8 +19,6 @@
  <input type="submit" value="Submit" class="submit" />
  </form>
 }
- }
- 
 } 
  </body> 
  </html>
