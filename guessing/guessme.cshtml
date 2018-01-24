@@ -5,7 +5,7 @@ Random cornum =  new Random();
 int newnum = cornum.Next(0,10);
  if (IsPost) { 
 	string guess = Request["magic"];
-	int guestguess = Int.Parse(guess);
+	int guestguess = int.Parse(guess);
 	if(guestguess == newnum){
 <p>You entered: <br />
  Correct! @guestguess <br />
