@@ -2,10 +2,10 @@
  <body> 
 @{
 Random cornum =  new Random();
-int32 newnum = cornum.Next(0,10);
+int newnum = cornum.Next(0,10);
  if (IsPost) { 
 	string guess = Request["magic"];
-	int32 guestguess = System.Int32.Parse(guess);
+	int guestguess = System.Int32.Parse(guess);
 	if(guestguess == newnum){
 <p>You entered: <br />
  Correct! @guestguess <br />
