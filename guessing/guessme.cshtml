@@ -4,8 +4,7 @@
 Random cornum =  new Random();
 int newnum = cornum.Next(0,10);
  if (IsPost) { 
-	
-	int guestguess = Convert.ToInt32(Session["magic"]);
+	int guestguess = Convert.ToInt32(Request["magic"]);
 	if(guestguess == newnum){
 <p>You entered: <br />
  Correct! @guestguess <br />
@@ -19,7 +18,6 @@ else{
 	<p>Your number is too low</p>
 	}
 	<p>YOUR number was @guestguess. the correct number was @newnum ...</p><br />
-	<p>no john YOU are the demons</p>
 	
 }
 } 
